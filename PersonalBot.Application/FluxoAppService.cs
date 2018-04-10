@@ -7,26 +7,17 @@ using System.Threading.Tasks;
 
 namespace PersonalBot.Application
 {
-    public class FluxoAppService: IFluxoAppService
+    public class FluxoAppService : IFluxoAppService
     {
-
         private readonly IAtividadeService _atividadeService;
         private readonly IAparelhoService _aparelhoService;
-        public static  IList<string> MensagensMotivacionais { get; set; }
+        public static IList<string> MensagensMotivacionais { get; set; }
 
         public FluxoAppService(IAtividadeService Iatividade, IAparelhoService Iaparelho)
         {
             _atividadeService = Iatividade;
             _aparelhoService = Iaparelho;
-
-            //Atual = Iniciar();
-
-       
-
         }
-
-
-       
 
         public Passo IniciarTreino(string treinoAux)
         {
@@ -49,8 +40,6 @@ namespace PersonalBot.Application
                     break;
             }
 
-
-
             //passo finalizar
             Passo Final = new Passo { Id = Guid.NewGuid(), Nome = "Fim", Pergunta = "Ok preguiçoso!!" };
 
@@ -65,7 +54,6 @@ namespace PersonalBot.Application
             inicialAtividade.Opcoes.Add(Atividade2);
 
             return inicialAtividade;
-
         }
 
         public Passo MudarPassoTreino(Passo Atual)
@@ -81,10 +69,9 @@ namespace PersonalBot.Application
         public Fluxo NovoFlux()
         {
             Fluxo f = new Fluxo();
-            f.Atual= Iniciar();
+            f.Atual = Iniciar();
             return f;
         }
-
 
         public Passo Iniciar()
         {
@@ -113,7 +100,6 @@ namespace PersonalBot.Application
             EscolherModulo.Opcoes.Add(EscolherModulo3);
 
             return Inicio;
-
         }
 
         public List<string> MontarTreino(string treinoAux)
@@ -129,7 +115,8 @@ namespace PersonalBot.Application
                     StringBuilder sb = new StringBuilder();
                     sb.AppendLine(l.Nome);
                     sb.AppendLine("Aparelho: " + l.Aparelho.Nome);
-                    sb.AppendLine("Descrição: " + l.Descricao);
+                    sb.AppendLine("Descrição: ");
+                    sb.AppendLine(l.Descricao);
                     sb.AppendLine("|" + l.Aparelho.Imagem);
                     perguntas.Add(sb.ToString());
 

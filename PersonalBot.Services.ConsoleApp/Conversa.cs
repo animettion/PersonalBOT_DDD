@@ -161,7 +161,7 @@ namespace PersonalBot.Services.ConsoleApp
 
             foreach (var item in TimerIDs)
             {
-                var dataVerificacao = item.Value.AddSeconds(600); //10 min
+                var dataVerificacao = item.Value.AddSeconds(10);
                 if (DateTime.Now >= dataVerificacao)
                 {
                     //TimerIDs.Remove(item.Key);

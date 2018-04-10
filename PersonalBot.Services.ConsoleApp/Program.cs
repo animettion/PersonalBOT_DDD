@@ -69,7 +69,7 @@ namespace PersonalBot.Services.ConsoleApp
             }
             catch (Exception ex)
             {
-
+                //TryCatch apenas na versão beta.
             }
 
         }

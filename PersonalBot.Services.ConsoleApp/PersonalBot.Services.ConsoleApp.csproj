@@ -77,13 +77,37 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="imagens\Abdominal.jpg" />
-    <Content Include="imagens\cadeira.jpg" />
+    <Content Include="imagens\Afundos.jpg" />
+    <Content Include="imagens\AgachamentoBarra.jpg" />
+    <Content Include="imagens\Antebracos.jpg" />
+    <Content Include="imagens\BomDia.jpg" />
+    <Content Include="imagens\Capturar.PNG" />
+    <Content Include="imagens\CrunchDeclinado.jpg" />
+    <Content Include="imagens\Cruxifixo.jpg" />
+    <Content Include="imagens\Curl.jpg" />
+    <Content Include="imagens\CurlHalteres.jpg" />
+    <Content Include="imagens\CurlMartelo.jpg" />
+    <Content Include="imagens\ElevacaoFrontal.jpg" />
+    <Content Include="imagens\ElevacaoLateral.jpg" />
+    <Content Include="imagens\Encolhimento.jpg" />
+    <Content Include="imagens\Esteira.jpg" />
+    <Content Include="imagens\ExtensaoBarra.jpg" />
+    <Content Include="imagens\Flexao.jpg" />
+    <Content Include="imagens\Fundos.jpg" />
+    <Content Include="imagens\Hiperextensao.jpg" />
     <Content Include="imagens\leg.jpg" />
-    <Content Include="imagens\Lombar.jpg" />
-    <Content Include="imagens\Puxada.jpg" />
+    <Content Include="imagens\MaquinaExtensora.jpg" />
+    <Content Include="imagens\MaquinaFlexora.jpg" />
+    <Content Include="imagens\PeckDeck.jpg" />
+    <Content Include="imagens\PressMilitar.jpg" />
+    <Content Include="imagens\PulloverBarra.jpg" />
+    <Content Include="imagens\PuxadaDorsais.jpg" />
     <Content Include="imagens\remada.jpg" />
-    <Content Include="imagens\supino.jpg" />
+    <Content Include="imagens\RemadaVertical.jpg" />
+    <Content Include="imagens\seated-dumbbell-kickback.jpg" />
+    <Content Include="imagens\SupinoDeclinado.jpg" />
+    <Content Include="imagens\SupinoInclinado.jpg" />
+    <Content Include="imagens\SupinoReto.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
