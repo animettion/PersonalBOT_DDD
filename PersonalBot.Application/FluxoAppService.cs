@@ -115,7 +115,7 @@ namespace PersonalBot.Application
                     StringBuilder sb = new StringBuilder();
                     sb.AppendLine(l.Nome);
                     sb.AppendLine("Aparelho: " + l.Aparelho.Nome);
-                    sb.AppendLine("Descrição: ");
+                    //sb.AppendLine("Descrição: ");
                     sb.AppendLine(l.Descricao);
                     sb.AppendLine("|" + l.Aparelho.Imagem);
                     perguntas.Add(sb.ToString());
